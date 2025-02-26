@@ -1,0 +1,40 @@
+Mini Car Race Creator : Read First
+
+
+First of all, thank you for purchasing MCR Creator. 
+
+
+Where to begin :
+
+Step 1: Try the demo.
+Open scene Intro.
+(Project tab : MCR Creator -> Demos -> Intro)
+
+Default inputs are :
+Left and right arrows to turn
+Up and down arrows to accelerate and break
+H to respawn
+P for Pause
+Enter/return to validate
+
+
+Step 2: Read the next two sections in the documentation to learn the basics of MCR Creator. 
+2-Tuto 1 : Create your first track
+3-Tuto 2 : Customize a car
+
+
+
+Step 3: When you would like to create a build for your project read section :
+6-Lighting and Optimization
+7-Export Mobile
+
+
+You will find all the information to start creating your race game in the full documentation :
+(MCR Creator -> Documentation -> MCR_Documentation.pdf)
+
+
+You can contact us at : 
+targetsoundfx@gmail.com
+
+
+
