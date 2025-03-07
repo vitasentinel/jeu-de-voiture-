@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class changementscene : MonoBehaviour
@@ -9,9 +10,8 @@ public class changementscene : MonoBehaviour
     public string sceneName;
     
     
-    void OnClick()
+    public void loadscene()
     {
-        Debug.Log("clic");
         SceneManager.LoadScene(sceneName);
         
     }
