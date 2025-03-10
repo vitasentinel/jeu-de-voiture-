@@ -12,6 +12,7 @@ public class BoostBonus : MonoBehaviour
         if (other.CompareTag("PlayerTrigger"))
         {
             StartCoroutine(Boosting(other.gameObject));
+            Destroy(this.gameObject);
         }
     }
     private IEnumerator Boosting(GameObject target)
