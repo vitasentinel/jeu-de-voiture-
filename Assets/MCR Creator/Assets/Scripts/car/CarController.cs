@@ -1467,7 +1467,7 @@ public class CarController : MonoBehaviour
     {
         //Max magnitude corrseponding to the max car speed.
         //(this value is arbitrary)
-        float MaxMagnitude = 5;
+        float MaxMagnitude = 10;
         //Max Speed corrseponding to the max car KMH.
         //(this value is arbitrary)
         float MaxKMH = 220;
