@@ -9,7 +9,7 @@ public class changementscene : MonoBehaviour
     public string sceneName;
     
     
-    public void changementscene()
+    public void Changementscene()
     {
         SceneManager.LoadScene(sceneName);
         
