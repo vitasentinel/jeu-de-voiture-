@@ -9,9 +9,8 @@ public class changementscene : MonoBehaviour
     public string sceneName;
     
     
-    void OnClick()
+    public void changementscene()
     {
-        Debug.Log("clic");
         SceneManager.LoadScene(sceneName);
         
     }
