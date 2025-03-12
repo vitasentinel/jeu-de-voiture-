@@ -8,20 +8,20 @@ public class malus : MonoBehaviour
     public ScoreManager ScoreManager;
     public ChainManager ChainManager;
 
-    private void OnCollisionEnter(Collision other )
+    private void OnTriggerEnter(Collider other)
         {
             if (!ChainManager.sheildBonus)
             {
-                if(other.gameObject.CompareTag("PlayerTrigger"))
+                if(other.CompareTag("PlayerTrigger"))
                 {
                     ScoreManager.MinusScore(minusScore);
-                    Destroy(this.gameObject);
+                    
                 }
             }
             else
             {
                 ChainManager.sheildBonus = false;
-                Destroy(this.gameObject);
+                
             }
             
         
