@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class malus : MonoBehaviour
@@ -15,13 +16,14 @@ public class malus : MonoBehaviour
                 if(other.CompareTag("PlayerTrigger"))
                 {
                     ScoreManager.MinusScore(minusScore);
+                    Destroy(gameObject);
                     
                 }
             }
             else
             {
                 ChainManager.sheildBonus = false;
-                
+                Destroy(gameObject);
             }
             
         

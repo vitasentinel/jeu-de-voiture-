@@ -127,9 +127,9 @@ public class LapCounter : MonoBehaviour {
         if (car [0] != null && Txt_P1_Lap) {
             Txt_P1_Lap.text = "Lap " + (car [0].iLapCounter).ToString () + "/" + lapNumber.ToString () ;
         }
-        if (car [1] != null && Txt_P2_Lap) {
-            Txt_P2_Lap.text = "Lap " + (car [1].iLapCounter).ToString () + "/" + lapNumber.ToString ();
-        }
+//        if (car [1] != null && Txt_P2_Lap) {
+//            Txt_P2_Lap.text = "Lap " + (car [1].iLapCounter).ToString () + "/" + lapNumber.ToString ();
+//        }
 
         yield return null;
     }
