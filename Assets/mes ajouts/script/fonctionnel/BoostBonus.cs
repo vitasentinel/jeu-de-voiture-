@@ -19,7 +19,7 @@ public class BoostBonus : MonoBehaviour
     private IEnumerator Boosting(GameObject target)
     {
         carController.MaxSpeed = boostSpeed;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         carController.MaxSpeed = baseSpeed;
     }
 }    
