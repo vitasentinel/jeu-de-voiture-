@@ -5,7 +5,8 @@ using UnityEngine;
 public class BoostBonus : MonoBehaviour
 {
     public CarController carController;
-    public int boostspeed = 6;
+    public int boostSpeed = 6;
+    public int baseSpeed = 3;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,8 +18,7 @@ public class BoostBonus : MonoBehaviour
     }
     private IEnumerator Boosting(GameObject target)
     {
-        float baseSpeed = carController.MaxSpeed;
-        carController.MaxSpeed = boostspeed;
+        carController.MaxSpeed = boostSpeed;
         yield return new WaitForSeconds(2f);
         carController.MaxSpeed = baseSpeed;
     }
