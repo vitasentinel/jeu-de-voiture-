@@ -10,7 +10,8 @@ public class timer : MonoBehaviour
     public float startMinute;
     public Text timerText;
     public float currenttime;
-
+    
+    public comptearebours comptearebours;
     
     void Start()
     {
@@ -19,8 +20,12 @@ public class timer : MonoBehaviour
 
     void Update()
     {
-        currenttime += Time.deltaTime;
-        TimeSpan time = TimeSpan.FromSeconds(currenttime);
-        timerText.text = time.Minutes.ToString() + ":" + time.Seconds.ToString() + ":" + time.Milliseconds.ToString();
+        if (comptearebours.started == true)
+        {
+            currenttime += Time.deltaTime;
+            TimeSpan time = TimeSpan.FromSeconds(currenttime);
+            timerText.text = time.Minutes.ToString() + ":" + time.Seconds.ToString() + ":" + time.Milliseconds.ToString();
+
+        }
     }
 }

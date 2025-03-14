@@ -8,9 +8,21 @@ public class ChainManager : MonoBehaviour
     public string typeName; 
     public int addScore = 0;
     public bool sheildBonus = false;
-    
-    
-    
+    Rigidbody rb;
+    public comptearebours comptearebours;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezePosition;
+    }
+    private void Update()
+    {
+        if (comptearebours.unfreezed == true)
+        {
+            rb.constraints = RigidbodyConstraints.None;
+        }
+    }
 
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
